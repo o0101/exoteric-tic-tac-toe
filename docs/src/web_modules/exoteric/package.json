@@ -1,0 +1,41 @@
+{
+  "author": {
+    "name": "@dosy"
+  },
+  "bugs": {
+    "url": "https://github.com/c9fe/exoteric/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "description": "exoteric. Code components without opinions.",
+  "homepage": "https://github.com/c9fe/exoteric#readme",
+  "keywords": [
+    "javascript",
+    "view",
+    "framework"
+  ],
+  "license": "Unlicense",
+  "main": "r.js",
+  "unpkg": "r.js",
+  "module": "r.js",
+  "browser": "dist/r.js",
+  "name": "exoteric",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c9fe/exoteric.git"
+  },
+  "scripts": {
+    "test": "serve -p 8080",
+    "build": "parcel build r.js",
+    "tscheck": "tsc --target ES2020 --checkJs --allowJs --outFile typetests/client.js --module System *.js decs.d.ts",
+    "lint": "npx eslint *.js",
+    "check": "( npm run tscheck || : ) && npm run lint",
+    "prepare": "npm run check && npm run build"
+  },
+  "version": "2.7.2",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "parcel": "^1.12.4",
+    "typescript": "^3.9.6"
+  }
+}

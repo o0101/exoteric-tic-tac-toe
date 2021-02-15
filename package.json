@@ -1,0 +1,44 @@
+{
+  "name": "@dosy-private/front-end",
+  "version": "1.0.0",
+  "description": "Tic-Tac-Toe in Exoteric",
+  "browser": "public/app.js",
+  "main": "public/app.js",
+  "scripts": {
+    "start": "export FE_PORT=8000&& export FE_MODE=production&& npm run lint && npm run pack && ./scripts/portredirect.sh && node -r esm static-server.js",
+    "test": "export FE_PORT=8080&& export FE_MODE=development&& npm run lint && npm run watch-pack && ./scripts/noredirect.sh && node -r esm static-server.js && kill $WATCH_PID",
+    "static": "npm run lint && npm run watch-pack && serve -p 8080",
+    "lint": "(rm public/bundle.js || :) && npx eslint public/src/*.js",
+    "pack": "npx webpack",
+    "watch-pack": "npx webpack --watch & WATCH_PID=$!",
+    "postinstall": "./scripts/prepare.sh",
+    "tests": "npm run lint && npm run pack && node -r esm public/src/tests.js"
+  },
+  "author": "@dosy",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/c9fe/front-end/issues"
+  },
+  "homepage": "https://github.com/c9fe/front-end#readme",
+  "dependencies": {
+    "exoteric": "^2.7.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "esm": "^3.2.25",
+    "serve": "^11.3.2",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c9fe/front-end.git"
+  },
+  "keywords": [
+    "hiring",
+    "hiring ritual bs",
+    "triplebyte",
+    "front-end"
+  ]
+}

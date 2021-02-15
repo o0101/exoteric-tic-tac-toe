@@ -1,5 +1,6 @@
 public/src/web_modules
-sslcerts
+public/src/bundle*
+sslcerts/*.pem
 
 .*.swp
 

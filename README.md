@@ -1,4 +1,4 @@
-# Front-end
+# Not esoteric tic-tac-toe
 
 This is a source port to [Exoteric.JS](https://github.com/c9fe/exoteric)
 of the [React.JS Tic-Tac-Toe example tutorial](https://reactjs.org/tutorial/tutorial.html) (*using the code at [this codepen](https://codepen.io/gaearon/pen/LyyXgK?editors=)*). 

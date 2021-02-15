@@ -1,5 +1,5 @@
 {
-  "name": "@dosy-private/front-end",
+  "name": "@dosy-private/exoteric-tic-tac-toe",
   "version": "1.0.0",
   "description": "Tic-Tac-Toe in Exoteric",
   "browser": "public/app.js",
@@ -17,9 +17,9 @@
   "author": "@dosy",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/c9fe/front-end/issues"
+    "url": "https://github.com/c9fe/exoteric-tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/c9fe/front-end#readme",
+  "homepage": "https://github.com/c9fe/exoteric-tic-tac-toe#readme",
   "dependencies": {
     "exoteric": "^2.7.2",
     "express": "^4.17.1"
@@ -33,12 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c9fe/front-end.git"
+    "url": "git+https://github.com/c9fe/exoteric-tic-tac-toe.git"
   },
   "keywords": [
-    "hiring",
-    "hiring ritual bs",
-    "triplebyte",
-    "front-end"
+    "exoteric-tic-tac-toe"
   ]
 }

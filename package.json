@@ -7,7 +7,7 @@
   "scripts": {
     "start": "export FE_PORT=8000&& export FE_MODE=production&& npm run lint && npm run pack && ./scripts/portredirect.sh && node -r esm static-server.js",
     "test": "export FE_PORT=8080&& export FE_MODE=development&& npm run lint && npm run watch-pack && ./scripts/noredirect.sh && node -r esm static-server.js && kill $WATCH_PID",
-    "static": "npm run lint && npm run watch-pack && serve -p 8080",
+    "static": "npm run lint && npm run watch-pack && serve -p 8080 public",
     "lint": "(rm public/bundle.js || :) && npx eslint public/src/*.js",
     "pack": "npx webpack",
     "watch-pack": "npx webpack --watch & WATCH_PID=$!",

@@ -45,23 +45,25 @@ async function run() {
       status = 'Next player: ' + (xIsNext ? 'X' : 'O');
     }
 
+    const renderSquare = i => Square({state,i});
+
     return e`
       <div>
         <div class="status">${status}</div>
         <div class="board-row">
-          ${Square({state,i:0})}
-          ${Square({state,i:1})}
-          ${Square({state,i:2})}
+          ${renderSquare(0)}
+          ${renderSquare(1)}
+          ${renderSquare(2)}
         </div>
         <div class="board-row">
-          ${Square({state,i:3})}
-          ${Square({state,i:4})}
-          ${Square({state,i:5})}
+          ${renderSquare(3)}
+          ${renderSquare(4)}
+          ${renderSquare(5)}
         </div>
         <div class="board-row">
-          ${Square({state,i:6})}
-          ${Square({state,i:7})}
-          ${Square({state,i:8})}
+          ${renderSquare(6)}
+          ${renderSquare(7)}
+          ${renderSquare(8)}
         </div>
       </div>
     `;

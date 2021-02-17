@@ -70,7 +70,8 @@ async function run() {
   }
 
   function Square({state, i}) {
-    return e`${{key:i+''}}
+    const key = i;
+    return e`${{key}}
       <button class="square" click=${() => handleClick({state,i})}>
         ${state.squares[i]}
       </button>

@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/c9fe/exoteric-tic-tac-toe#readme",
   "dependencies": {
-    "exoteric": "^2.7.2",
+    "exoteric": "^2.7.6",
     "express": "^4.17.1"
   },
   "devDependencies": {

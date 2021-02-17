@@ -75,7 +75,7 @@ async function run() {
       <button class="square" click=${() => handleClick({state,i})}>
         ${state.squares[i]}
       </button>
-    `
+    `;
   }
 
 // event handler
